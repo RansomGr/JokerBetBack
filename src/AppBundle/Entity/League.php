@@ -17,7 +17,7 @@ class League
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     *
      */
     private $id;
 
@@ -31,9 +31,38 @@ class League
     /**
      * @var mixed
      *
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Event",cascade={"merge"} ,fetch="EAGER")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Event",cascade={"merge"} ,fetch="EAGER" ,mappedBy="league")
      */
     private $events;
+    /**
+     * @var mixed
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Country",cascade={"merge"} ,fetch="EAGER")
+     */
+    private $country;
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @param mixed $events
+     */
+    public function setEvents($events)
+    {
+        $this->events = $events;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEvents()
+    {
+        return $this->events;
+    }
 
 
     /**
@@ -69,5 +98,22 @@ class League
     {
         return $this->name;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param mixed $country
+     */
+    public function setCountry($country)
+    {
+        $this->country = $country;
+    }
+
 }
 

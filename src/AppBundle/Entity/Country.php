@@ -31,7 +31,7 @@ class Country
     /**
      * @var mixed
      *
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\League",cascade={"merge"} ,fetch="EAGER")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\League",cascade={"merge"} ,fetch="EAGER" ,mappedBy="country")
      */
     private $leagues;
     /**
@@ -83,6 +83,15 @@ class Country
     {
         $this->leagues = $leagues;
     }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
 
 }
 

@@ -31,7 +31,7 @@ class CategoryOdds
     /**
      * @var mixed
      *
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\SousCategoryOdds",cascade={"merge"} ,fetch="EAGER")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\SousCategoryOdds",cascade={"merge"} ,fetch="EAGER")
      */
     private $sousCategorieOdds;
 

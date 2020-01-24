@@ -31,7 +31,7 @@ class Sport
     /**
      * @var mixed
      *
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Country",cascade={"merge"} ,fetch="EAGER")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Country",cascade={"merge"} ,fetch="EAGER")
      */
     private $countries;
 

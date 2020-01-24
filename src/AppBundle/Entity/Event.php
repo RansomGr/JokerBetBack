@@ -17,7 +17,7 @@ class Event
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     *
      */
     private $id;
 
@@ -59,11 +59,25 @@ class Event
     /**
      * @var mixed
      *
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\CategoryOdds",cascade={"merge"} ,fetch="EAGER")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\CategoryOdds",cascade={"merge"} ,fetch="EAGER")
      *
      */
     private $categoryOdds;
+    /**
+     * @var mixed
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\League",cascade={"merge"} )
+     *
+     */
+    private $league;
 
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
 
     /**
      * Get id
@@ -157,7 +171,6 @@ class Event
     public function setAway($away)
     {
         $this->away = $away;
-
         return $this;
     }
 
@@ -194,5 +207,38 @@ class Event
     {
         return $this->hourEventId;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCategoryOdds()
+    {
+        return $this->categoryOdds;
+    }
+
+    /**
+     * @param mixed $categoryOdds
+     */
+    public function setCategoryOdds($categoryOdds)
+    {
+        $this->categoryOdds = $categoryOdds;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLeague()
+    {
+        return $this->league;
+    }
+
+    /**
+     * @param mixed $league
+     */
+    public function setLeague($league)
+    {
+        $this->league = $league;
+    }
+
 }
 
