@@ -17,21 +17,22 @@ class Sport
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     *
      */
     private $id;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255, unique=true)
+     * @ORM\Column(name="name", type="string", length=255, nullable=true
+     *     )
      */
     private $name;
 
     /**
      * @var mixed
      *
-     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Country",cascade={"merge"} ,fetch="EAGER")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Country",cascade={"merge"} ,fetch="EAGER" ,mappedBy="sport")
      */
     private $countries;
 
@@ -44,6 +45,15 @@ class Sport
     {
         return $this->id;
     }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
 
     /**
      * Set name
@@ -84,6 +94,11 @@ class Sport
     {
         $this->countries = $countries;
     }
+
+    /**
+     * @return mixed
+     */
+
 
 }
 

@@ -22,9 +22,30 @@ class Country
     private $id;
 
     /**
+     * @return int
+     */
+    public function getIdCountry()
+    {
+        return $this->id_country;
+    }
+
+    /**
+     * @param int $id_country
+     */
+    public function setIdCountry($id_country)
+    {
+        $this->id_country = $id_country;
+    }
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id_country", type="string")
+     */
+    private $id_country;
+    /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255, unique=true)
+     * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
 
@@ -34,6 +55,13 @@ class Country
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\League",cascade={"merge"} ,fetch="EAGER" ,mappedBy="country")
      */
     private $leagues;
+
+    /**
+     * @var mixed
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Sport",cascade={"merge"} ,fetch="EAGER" )
+     */
+    private $sport;
     /**
      * Get id
      *
@@ -91,6 +119,24 @@ class Country
     {
         $this->id = $id;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getSport()
+    {
+        return $this->sport;
+    }
+
+    /**
+     * @param mixed $sport
+     */
+    public function setSport($sport)
+    {
+        $this->sport = $sport;
+    }
+
+
 
 
 }

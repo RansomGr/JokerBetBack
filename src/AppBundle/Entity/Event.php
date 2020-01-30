@@ -28,12 +28,7 @@ class Event
      */
     private $eventTime;
 
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="status", type="integer")
-     */
-    private $status;
+
 
     /**
      * @var string
@@ -52,9 +47,9 @@ class Event
     /**
      * @var int
      *
-     * @ORM\Column(name="hour_event_id", type="integer")
+     * @ORM\Column(name="our_event_id", type="integer")
      */
-    private $hourEventId;
+    private $ourEventId;
 
     /**
      * @var mixed
@@ -114,30 +109,6 @@ class Event
     }
 
     /**
-     * Set status
-     *
-     * @param integer $status
-     *
-     * @return Event
-     */
-    public function setStatus($status)
-    {
-        $this->status = $status;
-
-        return $this;
-    }
-
-    /**
-     * Get status
-     *
-     * @return int
-     */
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-    /**
      * Set home
      *
      * @param string $home
@@ -185,27 +156,27 @@ class Event
     }
 
     /**
-     * Set hourEventId
+     * Set ourEventId
      *
-     * @param integer $hourEventId
+     * @param integer $ourEventId
      *
      * @return Event
      */
-    public function setHourEventId($hourEventId)
+    public function setOurEventId($ourEventId)
     {
-        $this->hourEventId = $hourEventId;
+        $this->ourEventId = $ourEventId;
 
         return $this;
     }
 
     /**
-     * Get hourEventId
+     * Get ourEventId
      *
      * @return int
      */
-    public function getHourEventId()
+    public function getOurEventId()
     {
-        return $this->hourEventId;
+        return $this->ourEventId;
     }
 
     /**

@@ -37,7 +37,7 @@ class League
     /**
      * @var mixed
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Country",cascade={"merge"} ,fetch="EAGER")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Country",cascade={"merge"} )
      */
     private $country;
     /**
