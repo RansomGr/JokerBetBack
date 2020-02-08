@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b18e265c-186e-4512-93ed-58033bb5df7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Controller/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JokerBetBack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JokerBetBack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_1_22_20_8_39_PM_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_1_24_20__12_27_AM_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_1_22_20_8_45_PM_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_1_24_20__12_12_AM_s.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" beforeDir="false" afterPath="$PROJECT_DIR$/bin/symfony_requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,73 +22,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Sport.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Country.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Event.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="63" column="7" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CategoryOdds.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/SousCategoryOdds.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/League.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="92" selection-start-line="33" selection-start-column="92" selection-end-line="33" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
@@ -101,22 +47,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Country.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Sport.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/League.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Event.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/CategoryOdds.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/SousCategoryOdds.php" />
-      </list>
-    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -159,78 +89,88 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/vendor/phpcollection/phpcollection" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/vendor/jms/parser-lib" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="814" />
-  </component>
+  <component name="ProjectId" id="1X1zEwHj8CGdRftGKyuDQKUyeXX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JokerBetBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JokerBetBack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JokerBetBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JokerBetBack" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JokerBetBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JokerBetBack" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JokerBetBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JokerBetBack" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JokerBetBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JokerBetBack" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JokerBetBack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JokerBetBack" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="c inst" />
+      <command value="require symfony/http-client" />
+      <command value="c require symfony/http-client" />
+      <command value="c require symfony/unirest-php" />
+      <command value="s doctrine:schema:update" />
+      <command value="s doctrine:generate:entity" />
+      <command value="s doctrine:schema:drop" />
+      <command value="s doctrine:database:drop" />
+      <command value="s doctrine:schema:drop --force" />
+      <command value="s doctrine:schema:c" />
+      <command value="s doctrine:database:create" />
+      <command value="s doctrine:database:drop --force" />
+      <command value="s doctrine:database:cre" />
+      <command value="$ composer require friendsofsymfony/rest-bundle" />
+      <command value="composer require friendsofsymfony/rest-bundle" />
+      <command value="require friendsofsymfony/rest-bundle" />
+      <command value="c install" />
+      <command value="c require friendsofsymfony/rest-bundle" />
+      <command value="c require jms/serializer-bundle" />
+      <command value="c require symfony/serializer-pack" />
+      <command value="s debug:router" />
+      <command value="c dump-autoload" />
+      <command value="s cache:clear" />
+      <command value="s server:run" />
+      <command value="s doctrine:schema:create" />
+      <command value="s doctrine:schema:update --force" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppBundle" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/src/AppBundle" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="PHPUnit.AppBundle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -246,93 +186,138 @@
       <updated>1579721791213</updated>
       <workItem from="1579721793159" duration="1072000" />
       <workItem from="1579723034726" duration="5555000" />
+      <workItem from="1580228281837" duration="7796000" />
+      <workItem from="1580247933988" duration="11778000" />
+      <workItem from="1580346106811" duration="50000" />
+      <workItem from="1580414927828" duration="655000" />
+      <workItem from="1580496890330" duration="19000" />
+      <workItem from="1581107204428" duration="14990000" />
     </task>
+    <task id="LOCAL-00001" summary="23 jan 2020 check api athenticity and mapping created models and filled them from api">
+      <created>1579875881663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579875881663</updated>
+    </task>
+    <task id="LOCAL-00002" summary="config.php changed for changing the name of the controller">
+      <created>1579876089420</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579876089420</updated>
+    </task>
+    <task id="LOCAL-00003" summary="changes of our last meeting">
+      <created>1580414966707</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580414966708</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6627000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="805" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="10" sideWeight="0.49928468" weight="0.33660588" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959327" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.33240998" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Sport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/SportRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Country.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/League.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="92" selection-start-line="33" selection-start-column="92" selection-end-line="33" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="63" column="7" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CategoryOdds.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/SousCategoryOdds.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="23 jan 2020 check api athenticity and mapping created models and filled them from api" />
+    <MESSAGE value="config.php changed for changing the name of the controller" />
+    <MESSAGE value="changes of our last meeting" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes of our last meeting" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="644" y="177" width="645" height="726" key="#AppBundle" timestamp="1580258698275">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="644" y="177" width="645" height="726" key="#AppBundle/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1580258698275" />
+    <state x="674" y="130" key="#PHP" timestamp="1580258697689">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="674" y="130" key="#PHP/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1580258697689" />
+    <state x="709" y="376" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1581115774050">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="709" y="376" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1581115774050" />
+    <state x="753" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1580250926831">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="753" y="255" key="#com.intellij.ide.util.MemberChooser/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1580250926831" />
+    <state x="578" y="20" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579822732543">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="578" y="20" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1579822732543" />
+    <state x="562" y="134" key="CommitChangelistDialog2" timestamp="1580414965290">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="562" y="134" key="CommitChangelistDialog2/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1580414965290" />
+    <state x="684" y="418" key="ComposerCompositePathDialog" timestamp="1579822050406">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="684" y="418" key="ComposerCompositePathDialog/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1579822050406" />
+    <state x="181" y="90" key="DiffContextDialog" timestamp="1579876079695">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="181" y="90" key="DiffContextDialog/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1579876079695" />
+    <state x="739" y="281" key="FileChooserDialogImpl" timestamp="1579822048126">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="739" y="281" key="FileChooserDialogImpl/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1579822048126" />
+    <state x="815" y="428" key="FrameworkEditDialogDimensionKey" timestamp="1579821894514">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="815" y="428" key="FrameworkEditDialogDimensionKey/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1579821894514" />
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1581164512774">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1581164512774" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1581164512773">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.center/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1581164512773" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1581164512773">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.left/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1581164512773" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1581164512773">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.right/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1581164512773" />
+    <state x="622" y="354" key="NewPhpClassDialog" timestamp="1580254063130">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="622" y="354" key="NewPhpClassDialog/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1580254063130" />
+    <state x="461" y="182" key="SettingsEditor" timestamp="1581115786286">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="182" key="SettingsEditor/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1581115786286" />
+    <state x="802" y="442" width="377" height="196" key="SymfonyPathDialog" timestamp="1579821174834">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="802" y="442" width="377" height="196" key="SymfonyPathDialog/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1579821174834" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1581166105475">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1581166105475" />
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579821072960">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1579821072960" />
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1580496890134">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1580496890133" />
+    <state x="656" y="277" width="607" height="526" key="find.popup" timestamp="1581123113225">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="277" width="607" height="526" key="find.popup/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1581123113225" />
+    <state x="673" y="331" key="git4idea.merge.GitPullDialog" timestamp="1579820671416">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="673" y="331" key="git4idea.merge.GitPullDialog/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1579820671416" />
+    <state x="616" y="250" width="672" height="757" key="run.anything.popup" timestamp="1581164512794">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" width="672" height="757" key="run.anything.popup/251.1080.1093.614/0.0.1920.1080@0.0.1920.1080" timestamp="1581164512794" />
   </component>
 </project>
