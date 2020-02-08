@@ -1,3 +1,9 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+getPaysBySport:
+    path:   /getPaysBySport
+    defaults:   {   _controller: AppBundle:test:getPaysBySport    }
+getEventByLeague:
+    path:   /getEventByLeague
+    defaults:   {   _controller: AppBundle:test:getEventByLeague    }
