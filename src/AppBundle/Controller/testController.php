@@ -8,21 +8,54 @@ use AppBundle\Entity\League;
 use AppBundle\Entity\Sport;
 use AppBundle\Entity\SPORTNAME;
 use Doctrine\Common\Collections\ArrayCollection;
-use mysql_xdevapi\Collection;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Validator\Constraints\Date;
+
 
 class testController extends Controller
-{
+{//GetEventsByLeague GetPaysBySport
     /**
      * @Route("/", name="homepage")
      */
+
+    public function getPaysBySportAction(Request $request){//idSport en param
+
+        $em = $this->getDoctrine()->getManager();
+        $idSport=0;
+
+        $query = $em->createQuery(
+            'SELECT c
+        FROM AppBundle:Country c where c.sport = '.$idSport.' order by c.name ASC'
+        );
+        $pays = $query->getArrayResult();
+
+        $response = new Response(json_encode($pays));
+        $response->headers->set('Content-Type', 'application/json');
+
+        return $response;
+
+    }
+
+    public function getEventByLeagueAction(Request $request){//idLeague en param
+
+        $em = $this->getDoctrine()->getManager();
+        $idLeague=1;
+
+        $query = $em->createQuery(
+            'SELECT e
+        FROM AppBundle:Event e where e.league = '.$idLeague.' order by e.eventTime ASC'
+        );
+        $events = $query->getArrayResult();
+
+        $response = new Response(json_encode($events));
+        $response->headers->set('Content-Type', 'application/json');
+
+        return $response;
+    }
 
     public function indexAction(Request $request)
     {
