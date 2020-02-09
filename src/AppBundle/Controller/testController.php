@@ -40,23 +40,6 @@ class testController extends Controller
 
     }
 
-    public function getEventByLeagueAction(Request $request){//idLeague en param
-
-        $em = $this->getDoctrine()->getManager();
-        $idLeague=1;
-
-        $query = $em->createQuery(
-            'SELECT e
-        FROM AppBundle:Event e where e.league = '.$idLeague.' order by e.eventTime ASC'
-        );
-        $events = $query->getArrayResult();
-
-        $response = new Response(json_encode($events));
-        $response->headers->set('Content-Type', 'application/json');
-
-        return $response;
-    }
-
     public function indexAction(Request $request)
     {
         $application = new Application($this->get('kernel'));

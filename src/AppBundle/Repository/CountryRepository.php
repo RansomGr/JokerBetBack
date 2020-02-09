@@ -2,6 +2,8 @@
 
 namespace AppBundle\Repository;
 
+use Symfony\Component\HttpFoundation\Request;
+
 /**
  * CountryRepository
  *
@@ -10,4 +12,16 @@ namespace AppBundle\Repository;
  */
 class CountryRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function getCountryBySportIdAction(Request $request)
+    {
+        $em = $this->getEntityManager();
+        $idSport = $request->get("id_sport");
+
+        $query = $em->createQuery(
+            'SELECT c
+            FROM AppBundle:Country c where c.sport = ' . $idSport . ' order by c.name ASC'
+        );
+        return $query->getArrayResult();
+    }
 }

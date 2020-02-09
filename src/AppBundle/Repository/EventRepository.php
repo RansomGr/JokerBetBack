@@ -2,6 +2,8 @@
 
 namespace AppBundle\Repository;
 
+use Symfony\Component\HttpFoundation\Request;
+
 /**
  * EventRepository
  *
@@ -10,4 +12,17 @@ namespace AppBundle\Repository;
  */
 class EventRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function getEventByLeagueAction(Request $request)
+    {//idLeague en param
+
+        $em = $this->getEntityManager();
+        $idLeague = $request->get("id");
+
+        $query = $em->createQuery(
+            'SELECT e
+        FROM AppBundle:Event e where e.league = ' . $idLeague . ' order by e.eventTime ASC'
+        );
+        return $query->getArrayResult();
+    }
 }
