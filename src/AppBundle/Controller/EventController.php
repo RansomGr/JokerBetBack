@@ -33,8 +33,6 @@ class EventController extends Controller
     public function geteventsAction(Request $request)
     {
         $serializer = $this->get('jms_serializer');
-       // $league = $this->getDoctrine()->getManager()->getRepository(League::class)->find( $request->get("id"));
-
         return new JsonResponse(
             $serializer->serialize($this->getDoctrine()->getManager()->getRepository(Event::class)->getEventByLeagueAction($request),
                 "json"),
@@ -42,6 +40,46 @@ class EventController extends Controller
             true);
     }
 
+    /**
+     * @Rest\Get("/countEventsBleague/{id_league}")
+     */
+    public function countEventsByLeagueAction(Request $request)
+    {
+        $serializer = $this->get('jms_serializer');
+        return new JsonResponse(
+            $serializer->serialize($this->getDoctrine()->getManager()->getRepository(Event::class)->countEventsByLeagueAction($request),
+                "json"),
+            200 ,array(),
+            true);
+    }
+
+
+    /**
+     * @Rest\Get("/countEventsBcountry/{id_country}")
+     */
+    public function countEventsByCountryAction(Request $request)
+    {
+        $serializer = $this->get('jms_serializer');
+        return new JsonResponse(
+            $serializer->serialize($this->getDoctrine()->getManager()->getRepository(Event::class)->countEventsByCountryAction($request),
+                "json"),
+            200 ,array(),
+            true);
+    }
+
+    /**
+     * @Rest\Get("/countEventsBsport/{id_sport}")
+     */
+    public function countEventsBySportAction(Request $request)
+    {
+        $serializer = $this->get('jms_serializer');
+
+        return new JsonResponse(
+            $serializer->serialize($this->getDoctrine()->getManager()->getRepository(Event::class)->countEventsBySportAction($request),
+                "json"),
+            200 ,array(),
+            true);
+    }
 
 
 

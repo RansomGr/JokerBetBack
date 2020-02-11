@@ -24,4 +24,5 @@ class CountryRepository extends \Doctrine\ORM\EntityRepository
         );
         return $query->getArrayResult();
     }
+
 }

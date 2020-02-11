@@ -2,6 +2,8 @@
 
 namespace AppBundle\Repository;
 
+use Symfony\Component\HttpFoundation\Request;
+
 /**
  * LeagueRepository
  *
@@ -10,4 +12,18 @@ namespace AppBundle\Repository;
  */
 class LeagueRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function getleagueByCountryIdAction(Request $request)
+    {
+        $em = $this->getEntityManager();
+        $idCountry = $request->get("id_country");
+        $qb = $em->createQueryBuilder();
+        $qb->select('u')
+            ->from('AppBundle:League', 'u')
+            ->where('u.country ='. $idCountry)
+            ->orderBy('u.name',"ASC");
+        return $qb->getQuery()->getResult();
+
+    }
+
 }

@@ -17,29 +17,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 
 class testController extends Controller
-{//GetEventsByLeague GetPaysBySport
-    /**
-     * @Route("/", name="homepage")
-     */
-
-    public function getPaysBySportAction(Request $request){//idSport en param
-
-        $em = $this->getDoctrine()->getManager();
-        $idSport=0;
-
-        $query = $em->createQuery(
-            'SELECT c
-        FROM AppBundle:Country c where c.sport = '.$idSport.' order by c.name ASC'
-        );
-        $pays = $query->getArrayResult();
-
-        $response = new Response(json_encode($pays));
-        $response->headers->set('Content-Type', 'application/json');
-
-        return $response;
-
-    }
-
+{
     public function indexAction(Request $request)
     {
         $application = new Application($this->get('kernel'));

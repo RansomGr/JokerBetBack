@@ -13,7 +13,7 @@ class PaysController extends Controller
     /**
      * @Rest\Get("/getPaysBySport/{id_sport}")
      */
-    public function geteventsAction(Request $request)
+    public function getCountryBySportAction(Request $request)
     {
         $serializer = $this->get('jms_serializer');
         // $league = $this->getDoctrine()->getManager()->getRepository(League::class)->find( $request->get("id"));

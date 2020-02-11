@@ -15,7 +15,7 @@ class League
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+         * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      *
      */

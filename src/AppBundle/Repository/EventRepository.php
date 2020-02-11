@@ -14,15 +14,97 @@ class EventRepository extends \Doctrine\ORM\EntityRepository
 {
 
     public function getEventByLeagueAction(Request $request)
-    {//idLeague en param
-
+    {
+        //ordered by eventime DESC
         $em = $this->getEntityManager();
         $idLeague = $request->get("id");
+        $qb = $em->createQueryBuilder();
+               $qb->select('u')
+                   ->from('AppBundle:Event', 'u')
+                   ->innerJoin('u.league', 'p', 'WITH', 'p.id ='.$idLeague)
+                   ->where('u.league ='.$idLeague)
+                   ->orderBy('u.eventTime','DESC');
 
-        $query = $em->createQuery(
-            'SELECT e
-        FROM AppBundle:Event e where e.league = ' . $idLeague . ' order by e.eventTime ASC'
-        );
-        return $query->getArrayResult();
+       /* $qb = $em->createQueryBuilder();
+        $qb->select('u')
+            ->from('AppBundle:Event', 'u')
+            ->innerJoin('u.league', 'p', 'WITH', 'p.id ='.$idLeague)
+            ->where('u.league ='.$idLeague)
+            ->orderBy('u.league','DESC');*/
+
+        return $qb->getQuery()->getResult();
     }
+
+
+    public function countEventsByLeagueAction(Request $request)
+    {
+        $em = $this->getEntityManager();
+        $idLeague = $request->get("id_league");
+        $qb = $em->createQueryBuilder();
+        $qb->select('count(u)')
+            ->from('AppBundle:Event', 'u')
+            ->innerJoin('u.league', 'p', 'WITH', 'p.id ='.$idLeague)
+            ->where('u.league ='.$idLeague);
+        return $qb->getQuery()->getResult()[0][1];
+
+    }
+
+    public function countEventsByCountryAction(Request $request)
+    {
+        $em = $this->getEntityManager();
+        $idCountry = $request->get("id_country");
+        $number = 0;
+        $emm = $this->getEntityManager();
+        $qbb = $emm->createQueryBuilder();
+        $qbb->select('u')
+            ->from('AppBundle:League', 'u')
+            ->where('u.country ='. $idCountry);
+        $idsLeague = $qbb->getQuery()->getResult();
+        foreach ($idsLeague as $idLeague) {
+            $qb = $em->createQueryBuilder();
+             $qb->select('count(u)')
+                 ->from('AppBundle:Event', 'u')
+                 ->innerJoin('u.league', 'p', 'WITH' , 'p.id ='.$idLeague->getId())
+                 ->where('u.league = '. $idLeague->getId());
+             $qb->getQuery()->getResult();
+            $number = $number + $qb->getQuery()->getResult()[0][1];
+        }
+      return  $number;
+    }
+
+
+    public function countEventsBySportAction(Request $request)
+    {
+        $em = $this->getEntityManager();
+        $emm = $this->getEntityManager();
+        $emmm = $this->getEntityManager();
+        $idSport = $request->get("id_sport");
+        $number = 0;
+        $qb = $em->createQueryBuilder();
+        $qb->select('u')
+            ->from('AppBundle:Country', 'u')
+            ->where('u.sport ='. $idSport);
+        $idsCountries= $qb->getQuery()->getResult();
+        foreach ($idsCountries as $country) {
+            $qbb = $emm->createQueryBuilder();
+            $qbb->select('u')
+                ->from('AppBundle:League', 'u')
+                ->where('u.country ='. $country->getId());
+            $idsLeague = $qbb->getQuery()->getResult();
+
+            foreach ($idsLeague as $idLeague) {
+                $qbbb = $emmm->createQueryBuilder();
+                $qbbb->select('count(u)')
+                    ->from('AppBundle:Event', 'u')
+                    ->innerJoin('u.league', 'p', 'WITH' , 'p.id ='.$idLeague->getId())
+                    ->where('u.league = '. $idLeague->getId());
+                $qbbb->getQuery()->getResult();
+                $number = $number + $qbbb->getQuery()->getResult()[0][1];
+            }
+        }
+      return  $number;
+    }
+
+
+
 }
