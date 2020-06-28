@@ -28,7 +28,7 @@ class EventController extends Controller
 
 
     /**
-     * @Rest\Get("/getevents/{id}")
+     * @Rest\Get("/geteventsByLeague/{id}")
      */
     public function geteventsAction(Request $request)
     {
